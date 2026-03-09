@@ -1,26 +1,41 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importações */
+@import "bootstrap-icons/font/bootstrap-icons";
+@import "remixicon/fonts/remixicon.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Cores */
+  --prim: #C291F2;
+  --prim-light: #F1C2F2;
+  --second: #57AAF2;
+  --white: #fff;
+  --black: #000;
+  --gradient: linear-gradient(90deg, #C291F2 1.9%, #564D8C 85.96%);
+
+  /* Fontes */
+  --Pangolin: 'Pangolin', sans-serif;
+  --Federo: 'Federo', sans-serif;
+  --PunkWest: var(--font-punk-west);
+
+  /* Transições */
+  --transition-regular: 0.3s;
+  --transition-slow: 0.5s;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.Pangolin {
+  font-family: var(--Pangolin);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.Federo {
+  font-family: var(--Federo);
+}
+.PunkWest {
+  font-family: var(--PunkWest);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffaf3; 
+  overflow-y: hidden !important;
 }
