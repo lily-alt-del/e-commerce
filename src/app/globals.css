@@ -1,10 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Importações */
 @import "bootstrap-icons/font/bootstrap-icons";
 @import "remixicon/fonts/remixicon.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* Cores */
@@ -23,6 +23,12 @@
   /* Transições */
   --transition-regular: 0.3s;
   --transition-slow: 0.5s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .Pangolin {
