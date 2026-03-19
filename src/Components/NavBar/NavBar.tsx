@@ -1,4 +1,5 @@
 import MiddleNav from "./MiddleNav";
+import BottomNav from "./BottomNav"
 
 export default function NavBar() {
     return (
@@ -7,6 +8,7 @@ export default function NavBar() {
                 <div className="lg:block">
                     <MiddleNav />
                 </div>
+                <BottomNav />
             </header>
         </>
     )

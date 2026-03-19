@@ -1,11 +1,12 @@
 /* Importações */
-@import "bootstrap-icons/font/bootstrap-icons";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 @import "remixicon/fonts/remixicon.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Varpávei */
 :root {
   /* Cores */
   --prim: #C291F2;
@@ -15,33 +16,38 @@
   --black: #000;
   --gradient: linear-gradient(90deg, #C291F2 1.9%, #564D8C 85.96%);
 
-  /* Fontes */
-  --Pangolin: 'Pangolin', sans-serif;
-  --Federo: 'Federo', sans-serif;
-  --PunkWest: var(--font-punk-west);
-
   /* Transições */
   --transition-regular: 0.3s;
   --transition-slow: 0.5s;
 }
 
+/* Base */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.Pangolin {
-  font-family: var(--Pangolin);
-}
-.Federo {
-  font-family: var(--Federo);
-}
-.PunkWest {
-  font-family: var(--PunkWest);
+html, body{
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #fffaf3; 
-  overflow-y: hidden !important;
+  font-family: var(--font-pangolin);
+  color: var(--black);
+}
+
+/* Classes reutilizáveis */
+.font-pangolin {
+  font-family: var(--font-pangolin);
+}
+
+.font-federo {
+  font-family: var(--font-federo);
+}
+
+.font-punk {
+  font-family: var(--font-punk-west);
 }
