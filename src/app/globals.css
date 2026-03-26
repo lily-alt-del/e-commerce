@@ -9,12 +9,12 @@
 /* Varpávei */
 :root {
   /* Cores */
-  --prim: #C291F2;
-  --prim-light: #F1C2F2;
-  --second: #57AAF2;
+  --prim: #691414;
+  --prim-light: #b85858;
+  --second: #444444;
   --white: #fff;
   --black: #000;
-  --gradient: linear-gradient(90deg, #C291F2 1.9%, #564D8C 85.96%);
+  --gradient: linear-gradient(90deg, #691414 1.9%, #b85858 85.96%);
 
   /* Transições */
   --transition-regular: 0.3s;
@@ -50,4 +50,21 @@ body {
 
 .font-punk {
   font-family: var(--font-punk-west);
+}
+
+.fixed-nav {
+  animation: anim-fixed var(--transition-slow) forwards linear;
+  box-shadow: 0 2px 10px rgba(131, 131, 131, 0.6);
+  z-index: 9999;
+}
+
+@keyframes anim-fixed {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }

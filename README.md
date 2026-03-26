@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+<!-- {/* Mobile */}
+      <div className='flex items-center justify-end gap-4 lg:hidden'>
+        <Link
+          href='/Carrinho'
+          className='relative text-2xl text-black'
+          aria-label='Carrinho'
+        >
+          <i className='bi bi-cart3'></i>
+          <span className='absolute -right-2 -top-2 flex h-2 w-5 items-center justify-center rounded-full text-xs text-white'>
+            2
+          </span>
+        </Link>
+        <button
+          type='button'
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className='text-2xl text-black'
+          aria-label='Abrir menu'
+        >
+          <i className={mobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'}></i>
+        </button>
+      </div>
